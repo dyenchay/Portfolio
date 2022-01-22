@@ -64,9 +64,21 @@
   --bs-body-bg: #fff;
 }
 
+#portfolio img {
+  height: 10vw !important;
+  width: 10vw !important;
+}
+
+#portfolio .portfolio-box {
+  background-color: white;
+}
+
+#portfolio {
+background-color: #3e3e3e;
+color: white;
+}
+
 img {
-  height: 300px !important;
-  width: 300px !important;
   object-fit: scale-down;
 }
 
@@ -683,7 +695,6 @@ progress {
 }
 .row > * {
   flex-shrink: 0;
-  width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
