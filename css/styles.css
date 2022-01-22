@@ -64,11 +64,6 @@
   --bs-body-bg: #fff;
 }
 
-#portfolio img {
-  height: 10vw !important;
-  width: 10vw !important;
-}
-
 #portfolio .portfolio-box {
   background-color: white;
 }
@@ -11342,6 +11337,12 @@ hr.divider {
 
 hr.divider-light {
   background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  hr.divider {
+    max-width: 100% !important;
+  }
 }
 
 #mainNav {
