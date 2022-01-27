@@ -17,6 +17,33 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("a:contains(Logos)").click(function(){
+              $("#logos > #portfolio").toggle();
+            });
+            $("a:contains(Characters)").click(function(){
+              $("#characters > #portfolio").toggle();
+            });
+            $("a:contains(Photoshop)").click(function(){
+              $("#photoshop > #portfolio").toggle();
+            });
+            $("a:contains(Advertisement)").click(function(){
+              $("#advertisement > #portfolio").toggle();
+            });
+            $("a:contains(Drawings)").click(function(){
+              $("#drawings > #portfolio").toggle();
+            });
+            $("a:contains(3D Models)").click(function(){
+              $("#3d > #portfolio").toggle();
+            });
+            $("a:contains(Posters)").click(function(){
+              $("#posters > #portfolio").toggle();
+            });
+          });
+        </script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -67,41 +94,61 @@
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">My work over the years</h2>
                 <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
-                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-                        </div>
+                <div class="row d-flex">
+                    <div class="col-lg col-md-6 text-center">
+                        <a class="mt-5 btn btn-link">
+                          <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                          <h3 class="h4 mb-2">Logos</h3>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
+                    <div class=" text-center">
+                        <a class="mt-5 btn btn-link">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                        </div>
+                            <h3 class="h4 mb-2">Characters</h3>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
+                    <div class="text-center">
+                        <a class="mt-5 btn btn-link">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-                        </div>
+                            <h3 class="h4 mb-2">Photoshop</h3>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
+                    <div class="text-center">
+                        <a class="mt-5 btn btn-link">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                        </div>
+                            <h3 class="h4 mb-2">Advertisement</h3>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="mt-5 btn btn-link">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Drawings</h3>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="mt-5 btn btn-link">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">3D Models</h3>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="mt-5 btn btn-link">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Posters</h3>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
         <!-- Logos -->
+        <div id="logos">
         <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">Logos</h2>
+          <h2 class="text-center mt-0 logos">Logos</h2>
           <hr class="divider"/>
           <div class="container-fluid d-flex justify-content-around">
               <div class="row">
@@ -144,7 +191,9 @@
               </div>
             </div>
         </div>
+      </div>
         <!-- Characters -->
+        <div id="characters">
         <div class="py-5" id="portfolio">
           <h2 class="text-center mt-0">Characters</h2>
           <hr class="divider"/>
@@ -216,7 +265,9 @@
             </div>
           </div>
         </div>
+        </div>
         <!-- Photoshop -->
+        <div id="photoshop">
         <div class="py-5" id="portfolio">
           <h2 class="text-center mt-0">Photoshop</h2>
           <hr class="divider"/>
@@ -288,7 +339,9 @@
               </div>
             </div>
         </div>
+        </div>
         <!-- Advertisement -->
+        <div id="advertisement">
         <div class="py-5" id="portfolio">
           <h2 class="text-center mt-0">Advertisement</h2>
           <hr class="divider"/>
@@ -351,7 +404,9 @@
               </div>
             </div>
         </div>
+        </div>
         <!-- Drawings -->
+        <div id="drawings">
         <div class="py-5" id="portfolio">
           <h2 class="text-center mt-0">Drawings</h2>
           <hr class="divider"/>
@@ -387,7 +442,9 @@
               </div>
             </div>
         </div>
+        </div>
         <!-- 3D -->
+        <div id="3d">
         <div class="py-5" id="portfolio">
           <h2 class="text-center mt-0">3D Models</h2>
           <hr class="divider"/>
@@ -405,7 +462,9 @@
             </div>
           </div>
         </div>
+        </div>
         <!-- Posters -->
+        <div id="posters">
         <div class="py-5" id="portfolio">
           <h2 class="text-center mt-0">Posters</h2>
           <hr class="divider"/>
@@ -431,6 +490,7 @@
                 </div>
               </div>
           </div>
+        </div>
         </div>
 
         <!-- Footer-->
