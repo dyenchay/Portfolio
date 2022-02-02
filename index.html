@@ -18,8 +18,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Portfolio Gallery -->
         <script>
           $(document).ready(function(){
+
             $("a:contains(Logos)").click(function(){
               $("#logos > #portfolio").toggle();
             });
@@ -41,6 +43,7 @@
             $("a:contains(Posters)").click(function(){
               $("#posters > #portfolio").toggle();
             });
+
           });
         </script>
 
@@ -96,43 +99,43 @@
                 <hr class="divider" />
                 <div class="row d-flex">
                     <div class="col-lg col-md-6 text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#logos">
                           <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                           <h3 class="h4 mb-2">Logos</h3>
                         </a>
                     </div>
                     <div class=" text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#characters">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Characters</h3>
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#photoshop">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Photoshop</h3>
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#advertisement">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Advertisement</h3>
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#drawings">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Drawings</h3>
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#3d">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">3D Models</h3>
                         </a>
                     </div>
                     <div class="text-center">
-                        <a class="mt-5 btn btn-link">
+                        <a class="mt-5 btn btn-link" target="#posters">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Posters</h3>
                         </a>
@@ -141,356 +144,352 @@
             </div>
         </section>
 
-
-
-
-
         <!-- Logos -->
         <div id="logos">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0 logos">Logos</h2>
-          <hr class="divider"/>
-          <div class="container-fluid d-flex justify-content-around">
-              <div class="row">
-                <div class="col-lg-3 col-3 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/logo/1.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/logo/1.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-3 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/logo/2.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/logo/2.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-3 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/logo/3.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/logo/3.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-3 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/logo/4.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/logo/4.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-        <!-- Characters -->
-        <div id="characters">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">Characters</h2>
-          <hr class="divider"/>
-          <div class="container-fluid p-0 d-flex justify-content-around">
-            <div class="row">
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/1.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/1.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/2.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/2.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/3.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/3.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/4.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/4.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/5.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/5.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/6.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/6.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/characters/7.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/characters/7.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <!-- Photoshop -->
-        <div id="photoshop">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">Photoshop</h2>
-          <hr class="divider"/>
-          <div class="container-fluid p-0 d-flex justify-content-around">
-              <div class="row">
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/1.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/1.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/2.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/2.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/3.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/3.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/4.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/4.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/5.jpeg" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/5.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/6.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/6.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/photoshop/7.jpeg" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/photoshop/7.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-        <!-- Advertisement -->
-        <div id="advertisement">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">Advertisement</h2>
-          <hr class="divider"/>
-          <div class="container-fluid p-0 d-flex justify-content-around">
-              <div class="row">
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/advertisement/1.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/advertisement/1.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/advertisement/2.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/advertisement/2.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/advertisement/3.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/advertisement/3.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/advertisement/4.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/advertisement/4.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/advertisement/5.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/advertisement/5.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/advertisement/6.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/advertisement/6.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-        <!-- Drawings -->
-        <div id="drawings">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">Drawings</h2>
-          <hr class="divider"/>
-          <div class="container-fluid p-0 d-flex justify-content-around">
-              <div class="row">
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/drawings/1.jpg" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/drawings/1.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/drawings/2.jpg" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/drawings/2.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                    <a class="portfolio-box" href="img/drawings/3.jpg" title="Project Name">
-                      <img class="img-fluid" src="img/thumbnail/drawings/3.png" alt="..." />
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0 logos">Logos</h2>
+            <hr class="divider"/>
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="row">
+                  <div class="col-lg-3 col-3 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/logo/1.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/logo/1.png" alt="..." />
                       <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">Category</div>
                         <div class="project-name">Project Name</div>
                       </div>
-                      </a>
+                    </a>
                   </div>
+                  <div class="col-lg-3 col-3 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/logo/2.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/logo/2.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-3 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/logo/3.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/logo/3.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-3 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/logo/4.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/logo/4.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Characters -->
+        <div id="characters">
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0">Characters</h2>
+            <hr class="divider"/>
+            <div class="container-fluid p-0 d-flex justify-content-around">
+              <div class="row">
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/1.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/1.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/2.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/2.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/3.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/3.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/4.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/4.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/5.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/5.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/6.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/6.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/characters/7.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/characters/7.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
         </div>
+        <!-- Photoshop -->
+        <div id="photoshop">
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0">Photoshop</h2>
+            <hr class="divider"/>
+            <div class="container-fluid p-0 d-flex justify-content-around">
+                <div class="row">
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/1.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/1.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/2.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/2.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/3.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/3.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/4.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/4.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/5.jpeg" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/5.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/6.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/6.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/photoshop/7.jpeg" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/photoshop/7.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Advertisement -->
+        <div id="advertisement">
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0">Advertisement</h2>
+            <hr class="divider"/>
+            <div class="container-fluid p-0 d-flex justify-content-around">
+                <div class="row">
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/advertisement/1.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/advertisement/1.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/advertisement/2.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/advertisement/2.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/advertisement/3.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/advertisement/3.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/advertisement/4.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/advertisement/4.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/advertisement/5.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/advertisement/5.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/advertisement/6.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/advertisement/6.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Drawings -->
+        <div id="drawings">
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0">Drawings</h2>
+            <hr class="divider"/>
+            <div class="container-fluid p-0 d-flex justify-content-around">
+                <div class="row">
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/drawings/1.jpg" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/drawings/1.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/drawings/2.jpg" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/drawings/2.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                      <a class="portfolio-box" href="img/drawings/3.jpg" title="Project Name">
+                        <img class="img-fluid" src="img/thumbnail/drawings/3.png" alt="..." />
+                        <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">Category</div>
+                          <div class="project-name">Project Name</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+              </div>
+          </div>
         </div>
         <!-- 3D -->
         <div id="3d">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">3D Models</h2>
-          <hr class="divider"/>
-          <div class="container-fluid p-0 d-flex justify-content-around">
-            <div class="row">
-              <div class="col-lg col-sm-6 d-flex justify-content-center">
-                <a class="portfolio-box" href="img/3d/1.png" title="Project Name">
-                  <img class="img-fluid" src="img/thumbnail/3d/1.png" alt="..." />
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
-                    <div class="project-name">Project Name</div>
-                  </div>
-                </a>
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0">3D Models</h2>
+            <hr class="divider"/>
+            <div class="container-fluid p-0 d-flex justify-content-around">
+              <div class="row">
+                <div class="col-lg col-sm-6 d-flex justify-content-center">
+                  <a class="portfolio-box" href="img/3d/1.png" title="Project Name">
+                    <img class="img-fluid" src="img/thumbnail/3d/1.png" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
         <!-- Posters -->
         <div id="posters">
-        <div class="py-5" id="portfolio">
-          <h2 class="text-center mt-0">Posters</h2>
-          <hr class="divider"/>
-          <div class="container-fluid p-0 d-flex justify-content-around">
-            <div class="row">
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/posters/1.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/posters/1.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
+          <div class="py-5" id="portfolio">
+            <h2 class="text-center mt-0">Posters</h2>
+            <hr class="divider"/>
+            <div class="container-fluid p-0 d-flex justify-content-around">
+              <div class="row">
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/posters/1.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/posters/1.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg col-sm-6 d-flex justify-content-center">
+                    <a class="portfolio-box" href="img/posters/2.png" title="Project Name">
+                      <img class="img-fluid" src="img/thumbnail/posters/2.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-lg col-sm-6 d-flex justify-content-center">
-                  <a class="portfolio-box" href="img/posters/2.png" title="Project Name">
-                    <img class="img-fluid" src="img/thumbnail/posters/2.png" alt="..." />
-                    <div class="portfolio-box-caption">
-                      <div class="project-category text-white-50">Category</div>
-                      <div class="project-name">Project Name</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Footer-->
