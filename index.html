@@ -63,6 +63,11 @@
             $("a:contains(Posters)").click(function(){
               $("#posters > #portfolio").fadeIn();
             });
+            $("a").click(function(event){
+              $("a").removeClass("active");
+              $(event.currentTarget).addClass("active");
+
+            });
           });
         </script>
 
@@ -153,13 +158,13 @@
                 <div class="navbar navbar-expand-md">
                   <div class="row collapse navbar-collapse btn-group" role="group">
 
-                        <a class="btn btn-primary">Logos</a>
-                        <a class="btn btn-primary">Characters</a>
-                        <a class="btn btn-primary">Photoshop</a>
-                        <a class="btn btn-primary">Advertisement</a>
-                        <a class="btn btn-primary">Drawings</a>
-                        <a class="btn btn-primary">3D Models</a>
-                        <a class="btn btn-primary">Posters</a>
+                        <a type="button" class="btn btn-primary">Logos</a>
+                        <a type="button" class="btn btn-primary">Characters</a>
+                        <a type="button" class="btn btn-primary">Photoshop</a>
+                        <a type="button" class="btn btn-primary">Advertisement</a>
+                        <a type="button" class="btn btn-primary">Drawings</a>
+                        <a type="button" class="btn btn-primary">3D Models</a>
+                        <a type="button" class="btn btn-primary">Posters</a>
 
                   </div>
                 </div>
