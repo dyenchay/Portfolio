@@ -64,8 +64,8 @@
   --bs-body-bg: #fff;
 }
 
-.side-cover {
-
+html {
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -92,12 +92,16 @@
 }
 
 #portfolio .portfolio-box {
-  margin: 5px;
+  margin: 1px;
 }
 
 #portfolio {
 color: white;
 display: none;
+}
+
+#logos #portfolio {
+  display: block;
 }
 
 
