@@ -1,525 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Creative - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-          $(document).ready(function(){
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Creative - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
 
-            $("a:not('#Logos, .portfolio-box')").click(function(){
-              $("#logos > #portfolio").hide();
-            });
-            $("a:contains(Logos)").click(function(){
-              $("#logos > #portfolio").fadeIn();
-            });
-            $("a:not('#characters, .portfolio-box')").click(function(){
-              $("#characters > #portfolio").hide();
-            });
-            $("a:contains(Characters)").click(function(){
-              $("#characters > #portfolio").fadeIn();
-            });
-            $("a:not('#photoshop, .portfolio-box')").click(function(){
-              $("#photoshop > #portfolio").hide();
-            });
-            $("a:contains(Photoshop)").click(function(){
-              $("#photoshop > #portfolio").fadeIn();
-            });
-            $("a:not('#advertisement, .portfolio-box')").click(function(){
-              $("#advertisement > #portfolio").hide();
-            });
-            $("a:contains(Advertisement)").click(function(){
-              $("#advertisement > #portfolio").fadeIn();
-            });
-            $("a:not('#drawings, .portfolio-box')").click(function(){
-              $("#drawings > #portfolio").hide();
-            });
-            $("a:contains(Drawings)").click(function(){
-              $("#drawings > #portfolio").fadeIn();
-            });
-            $("a:not('#3d, .portfolio-box')").click(function(){
-              $("#3d > #portfolio").hide();
-            });
-            $("a:contains(3D Models)").click(function(){
-              $("#3d > #portfolio").fadeIn();
-            });
-            $("a:not('#posters, .portfolio-box')").click(function(){
-              $("#posters > #portfolio").hide();
-            });
-            $("a:contains(Posters)").click(function(){
-              $("#posters > #portfolio").fadeIn();
-            });
-            $("a").click(function(event){
-              $("a").removeClass("active");
-              $(event.currentTarget).addClass("active");
-            });
-          });
-        </script>
-
-    </head>
-    <body>
-
-        <!-- Masthead-->
-        <header class="masthead transition w-100">
-            <div class="container-lg h-100">
-                <div class="d-lg-flex gx-4 gx-lg-5 h-100 align-items-center">
-                    <div class="col-lg-7 col-xl-6 px-md-5">
-                      <h3 class="name">Destiney Yenchay</h3>
-                      <h2 class="title text-white font-weight-bold">Mobile Web Designer</h2>
-                      <hr class="divider mt-lg-5"/>
-                    </div>
-                    <div class="d-none d-lg-block side-cover bg-black bg-opacity-75 col-lg ms-auto h-100">
-
-
-                    </div>
-                </div>
+        $("a:not('#Logos, .portfolio-box')").click(function(){
+          $("#logos > #portfolio").hide();
+        });
+        $("a:contains(Logos)").click(function(){
+          $("#logos > #portfolio").fadeIn();
+        });
+        $("a:not('#characters, .portfolio-box')").click(function(){
+          $("#characters > #portfolio").hide();
+        });
+        $("a:contains(Characters)").click(function(){
+          $("#characters > #portfolio").fadeIn();
+        });
+        $("a:not('#photoshop, .portfolio-box')").click(function(){
+          $("#photoshop > #portfolio").hide();
+        });
+        $("a:contains(Photoshop)").click(function(){
+          $("#photoshop > #portfolio").fadeIn();
+        });
+        $("a:not('#advertisement, .portfolio-box')").click(function(){
+          $("#advertisement > #portfolio").hide();
+        });
+        $("a:contains(Advertisement)").click(function(){
+          $("#advertisement > #portfolio").fadeIn();
+        });
+        $("a:not('#drawings, .portfolio-box')").click(function(){
+          $("#drawings > #portfolio").hide();
+        });
+        $("a:contains(Drawings)").click(function(){
+          $("#drawings > #portfolio").fadeIn();
+        });
+        $("a:not('#3d, .portfolio-box')").click(function(){
+          $("#3d > #portfolio").hide();
+        });
+        $("a:contains(3D Models)").click(function(){
+          $("#3d > #portfolio").fadeIn();
+        });
+        $("a:not('#posters, .portfolio-box')").click(function(){
+          $("#posters > #portfolio").hide();
+        });
+        $("a:contains(Posters)").click(function(){
+          $("#posters > #portfolio").fadeIn();
+        });
+        $("a").click(function(event){
+          $("a").removeClass("active");
+          $(event.currentTarget).addClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Masthead-->
+    <header class="masthead w-100">
+      <div class="container-lg h-100">
+          <div class="d-lg-flex gx-4 gx-lg-5 h-100 align-items-center">
+              <div class="col-lg-7 col-xl-6 px-md-5">
+                <h3 class="name">Destiney Yenchay</h3>
+                <h2 class="title text-white font-weight-bold">Mobile Web Designer</h2>
+                <hr class="divider mt-lg-5"/>
+              </div>
+              <div class="d-none d-lg-block side-cover bg-black bg-opacity-75 col-lg ms-auto h-100"></div>
             </div>
-        </header>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container-fluid px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 mx-auto col-8 justify-content-center">
-                  <div class="col-lg-5 align-self-center">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </div>
-                  <div class="col-lg-7">
-                    <img class="img-fluid" src="img/browser.png" alt="..." />
+        </div>
+    </header>
+    <div class="body">
+      <!-- About-->
+      <section class="page-section" id="about">
+        <div class="container-fluid px-4 px-lg-5">
+              <div class="row gx-4 gx-lg-5 mx-auto col-8 justify-content-center">
+                <div class="col-lg-5 align-self-center">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="col-lg-7">
+                  <img class="img-fluid" src="img/browser.png" alt="..." />
 
-                    </div>
                   </div>
                 </div>
+              </div>
+      </section>
+      <!-- Services-->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </section>
-        <!-- Services-->
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group" aria-labelledby="dropdownMenuButton1">
-          <a class="list-group-item list-group-item-action">Logos</a>
-          <a class="list-group-item list-group-item-action">Characters</a>
-          <a class="list-group-item list-group-item-action">Photoshop</a>
-          <a class="list-group-item list-group-item-action">Advertisement</a>
-          <a class="list-group-item list-group-item-action">Drawings</a>
-          <a class="list-group-item list-group-item-action">3D Models</a>
-          <a class="list-group-item list-group-item-action">Posters</a>
+            <div class="modal-body">
+              <div class="list-group" aria-labelledby="dropdownMenuButton1">
+                <a class="list-group-item list-group-item-action">Logos</a>
+                <a class="list-group-item list-group-item-action">Characters</a>
+                <a class="list-group-item list-group-item-action">Photoshop</a>
+                <a class="list-group-item list-group-item-action">Advertisement</a>
+                <a class="list-group-item list-group-item-action">Drawings</a>
+                <a class="list-group-item list-group-item-action">3D Models</a>
+                <a class="list-group-item list-group-item-action">Posters</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-        <section class="page-section" id="services">
-            <div class="container-lg px-3 px-lg-5">
-              <!-- Button trigger modal -->
-      <button type="button" class="d-block d-md-none btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-      </button>
-                <h2 class="text-center mt-0">My work over the years</h2>
-                <hr class="divider" />
+      <section class="page-section" id="services">
+        <div class="container-lg px-3 px-lg-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="d-block d-md-none btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>
+            <h2 class="text-center mt-0">My work over the years</h2>
+            <hr class="divider" />
 
 
 
-                <div class="navbar navbar-expand-md">
-                  <div class="collapse navbar-collapse btn-group" role="group">
-
-                        <a type="button" class="btn btn-primary">Logos</a>
-                        <a type="button" class="btn btn-primary">Characters</a>
-                        <a type="button" class="btn btn-primary">Photoshop</a>
-                        <a type="button" class="btn btn-primary">Advertisement</a>
-                        <a type="button" class="btn btn-primary">Drawings</a>
-                        <a type="button" class="btn btn-primary">3D Models</a>
-                        <a type="button" class="btn btn-primary">Posters</a>
-
-                  </div>
-                </div>
-                <div class="bg-black bg-opacity-50">
-
-                        <!-- Logos -->
-                        <div id="logos">
-                          <div class="py-1" id="portfolio">
-                            <div class="container-fluid">
-                                <div class="row row-cols-2 row-cols-md-5 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                                  <div class="col col-lg-1 d-flex justify-content-center">
-                                    <a class="portfolio-box" href="img/logo/1.png" title="Project Name">
-                                      <img class="img-fluid" src="img/thumbnail/logo/1.png" alt="..." />
-                                      <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Project Name</div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="col col-lg-1 d-flex justify-content-center">
-                                    <a class="portfolio-box" href="img/logo/2.png" title="Project Name">
-                                      <img class="img-fluid" src="img/thumbnail/logo/2.png" alt="..." />
-                                      <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Project Name</div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="col col-lg-1 d-flex justify-content-center">
-                                    <a class="portfolio-box" href="img/logo/3.png" title="Project Name">
-                                      <img class="img-fluid" src="img/thumbnail/logo/3.png" alt="..." />
-                                      <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Project Name</div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="col col-lg-1 d-flex justify-content-center">
-                                    <a class="portfolio-box" href="img/logo/4.png" title="Project Name">
-                                      <img class="img-fluid" src="img/thumbnail/logo/4.png" alt="..." />
-                                      <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Project Name</div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                        <!-- Characters -->
-                        <div id="characters">
-                          <div class="py-1" id="portfolio">
-                          <div class="container-fluid">
-                            <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/1.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/1.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/2.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/2.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/3.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/3.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/4.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/4.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/5.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/5.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/6.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/6.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/characters/7.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/characters/7.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                        <!-- Photoshop -->
-                        <div id="photoshop">
-                          <div class="py-1" id="portfolio">
-                          <div class="container-fluid">
-                              <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/1.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/1.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/2.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/2.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/3.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/3.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/4.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/4.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/5.jpeg" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/5.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/6.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/6.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/photoshop/7.jpeg" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/photoshop/7.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- Advertisement -->
-                        <div id="advertisement">
-                          <div class="py-1" id="portfolio">
-                          <div class="container-fluid">
-                              <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/advertisement/1.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/advertisement/1.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/advertisement/2.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/advertisement/2.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/advertisement/3.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/advertisement/3.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/advertisement/4.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/advertisement/4.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/advertisement/5.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/advertisement/5.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/advertisement/6.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/advertisement/6.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- Drawings -->
-                        <div id="drawings">
-                          <div class="py-1" id="portfolio">
-                          <div class="container-fluid">
-                              <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/drawings/1.jpg" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/drawings/1.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/drawings/2.jpg" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/drawings/2.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                    <a class="portfolio-box" href="img/drawings/3.jpg" title="Project Name">
-                                      <img class="img-fluid" src="img/thumbnail/drawings/3.png" alt="..." />
-                                      <div class="portfolio-box-caption">
-                                        <div class="project-category text-white-50">Category</div>
-                                        <div class="project-name">Project Name</div>
-                                      </div>
-                                      </a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- 3D -->
-                        <div id="3d">
-                          <div class="py-1" id="portfolio">
-                          <div class="container-fluid">
-                            <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                              <div class="col col-lg-2 d-flex justify-content-center">
-                                <a class="portfolio-box" href="img/3d/1.png" title="Project Name">
-                                  <img class="img-fluid" src="img/thumbnail/3d/1.png" alt="..." />
-                                  <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
-                                  </div>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                        <!-- Posters -->
-                        <div id="posters">
-                          <div class="py-1" id="portfolio">
-                          <div class="container-fluid">
-                            <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/posters/1.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/posters/1.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                                <div class="col col-lg-2 d-flex justify-content-center">
-                                  <a class="portfolio-box" href="img/posters/2.png" title="Project Name">
-                                    <img class="img-fluid" src="img/thumbnail/posters/2.png" alt="..." />
-                                    <div class="portfolio-box-caption">
-                                      <div class="project-category text-white-50">Category</div>
-                                      <div class="project-name">Project Name</div>
-                                    </div>
-                                  </a>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                        </div>
-
-
-
-
-
-                </div>
-                <div class="col-lg-7 mx-auto">
-                  <img class="img-fluid" src="img/7.png" alt="..." />
-
-                  </div>
+            <div class="navbar navbar-expand-md pb-0">
+              <div class="collapse navbar-collapse btn-group" role="group">
+                <a type="button" class="btn btn-primary">Logos</a>
+                <a type="button" class="btn btn-primary">Characters</a>
+                <a type="button" class="btn btn-primary">Photoshop</a>
+                <a type="button" class="btn btn-primary">Advertisement</a>
+                <a type="button" class="btn btn-primary">Drawings</a>
+                <a type="button" class="btn btn-primary">3D Models</a>
+                <a type="button" class="btn btn-primary">Posters</a>
+              </div>
             </div>
+              <div class="">
+                <!-- Logos -->
+                <div id="logos">
+                  <div class="py-1" id="portfolio">
+                    <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/logo/1.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/logo/1.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/logo/2.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/logo/2.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/logo/3.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/logo/3.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/logo/4.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/logo/4.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Characters -->
+                <div id="characters">
+                  <div class="py-1" id="portfolio">
+                  <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/1.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/1.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/2.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/2.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/3.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/3.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/4.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/4.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/5.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/5.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/6.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/6.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/characters/7.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/characters/7.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!-- Photoshop -->
+                <div id="photoshop">
+                  <div class="py-1" id="portfolio">
+                  <div class="container-fluid">
+                      <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/1.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/1.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/2.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/2.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/3.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/3.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/4.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/4.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/5.jpeg" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/5.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/6.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/6.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/photoshop/7.jpeg" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/photoshop/7.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Advertisement -->
+                <div id="advertisement">
+                  <div class="py-1" id="portfolio">
+                  <div class="container-fluid">
+                      <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/advertisement/1.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/advertisement/1.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/advertisement/2.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/advertisement/2.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/advertisement/3.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/advertisement/3.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/advertisement/4.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/advertisement/4.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/advertisement/5.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/advertisement/5.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/advertisement/6.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/advertisement/6.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Drawings -->
+                <div id="drawings">
+                  <div class="py-1" id="portfolio">
+                  <div class="container-fluid">
+                      <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/drawings/1.jpg" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/drawings/1.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/drawings/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/drawings/2.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                            <a class="portfolio-box" href="img/drawings/3.jpg" title="Project Name">
+                              <img class="img-fluid" src="img/thumbnail/drawings/3.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <!-- 3D -->
+                <div id="3d">
+                  <div class="py-1" id="portfolio">
+                  <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                      <div class="col col-lg-2 d-flex justify-content-center">
+                        <a class="portfolio-box" href="img/3d/1.png" title="Project Name">
+                          <img class="img-fluid" src="img/thumbnail/3d/1.png" alt="..." />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!-- Posters -->
+                <div id="posters">
+                  <div class="py-1" id="portfolio">
+                  <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/posters/1.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/posters/1.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col col-lg-2 d-flex justify-content-center">
+                          <a class="portfolio-box" href="img/posters/2.png" title="Project Name">
+                            <img class="img-fluid" src="img/thumbnail/posters/2.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-7 mx-auto">
+                <img class="img-fluid" src="img/7.png" alt="..." />
+              </div>
+          </div>
+      </section>
 
-        </section>
-
-
-
-
-
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+      <!-- Footer-->
+      <footer class="bg-light py-5">
+          <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- SimpleLightbox plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+      <!-- * *                               SB Forms JS                               * *-->
+      <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </div>
+  </body>
 </html>
