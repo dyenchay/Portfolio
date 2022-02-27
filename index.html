@@ -45,27 +45,27 @@
         $("a:contains(Advertisement)").click(function(){
           $("#advertisement > #portfolio").fadeIn();
         });
-        $("a:not('#drawings, .portfolio-box')").click(function(){
-          $("#drawings > #portfolio").hide();
+        $("a:not('#digitalart, .portfolio-box')").click(function(){
+          $("#digitalart > #portfolio").hide();
         });
-        $("a:contains(Drawings)").click(function(){
-          $("#drawings > #portfolio").fadeIn();
-        });
-        $("a:not('#3d, .portfolio-box')").click(function(){
-          $("#3d > #portfolio").hide();
-        });
-        $("a:contains(3D Models)").click(function(){
-          $("#3d > #portfolio").fadeIn();
-        });
-        $("a:not('#posters, .portfolio-box')").click(function(){
-          $("#posters > #portfolio").hide();
-        });
-        $("a:contains(Posters)").click(function(){
-          $("#posters > #portfolio").fadeIn();
+        $("a:contains(Digital Art)").click(function(){
+          $("#digitalart > #portfolio").fadeIn();
         });
         $("a").click(function(event){
           $("a").removeClass("active");
           $(event.currentTarget).addClass("active");
+        });
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+            $(".page-section#about").delay("fast").fadeTo(300, 1.0);
+          }
+        });
+
+        $(".masthead .title").animate({left: 'toggle', display: 'block'}, "slow");
+
+        $(".masthead .name").animate({
+          height: 'toggle',
+          display: 'block'
         });
       });
     </script>
@@ -73,33 +73,36 @@
   <body>
     <!-- Masthead-->
     <header class="masthead w-100">
-      <div class="container-lg h-100">
+      <div class="vh-100 bg-black bg-opacity-75">
+        <div class="triangle-right position-absolute top-0 end-0"></div>
+        <div class="container-lg h-100">
           <div class="d-lg-flex gx-4 gx-lg-5 h-100 align-items-center">
               <div class="col-lg-7 col-xl-6 px-md-5">
                 <h3 class="name">Destiney Yenchay</h3>
-                <h2 class="title text-white font-weight-bold">Mobile Web Designer</h2>
+                <h2 class="title text-white font-weight-bold">Front-End Web Developer</h2>
                 <hr class="divider mt-lg-5"/>
               </div>
-              <div class="d-none d-lg-block side-cover bg-black bg-opacity-75 col-lg ms-auto h-100"></div>
+              <!-- <div class="d-none d-lg-block side-cover bg-black bg-opacity-75 col-lg ms-auto h-100"></div> -->
             </div>
         </div>
+      </div>
     </header>
+    <div class="triangle-left position-absolute bottom-0 start-0"></div>
     <div class="body">
-      <!-- About-->
-      <section class="page-section" id="about">
-        <div class="container-fluid px-4 px-lg-5">
-              <div class="row gx-4 gx-lg-5 mx-auto col-8 justify-content-center">
-                <div class="col-lg-5 align-self-center">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-                <div class="col-lg-7">
-                  <img class="img-fluid" src="img/browser.png" alt="..." />
 
-                  </div>
-                </div>
-              </div>
+      <!-- About-->
+      <section class="page-section m-0" id="about">
+        <div class="container-fluid px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 mx-auto col-8 justify-content-center">
+            <div class="col-lg-5 align-self-center text-white">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="col-lg-7">
+              <img class="img-fluid" src="img/browser.png" alt="..." />
+            </div>
+          </div>
+        </div>
       </section>
-      <!-- Services-->
 
 
       <!-- Modal -->
@@ -115,34 +118,27 @@
                 <a class="list-group-item list-group-item-action">Characters</a>
                 <a class="list-group-item list-group-item-action">Photoshop</a>
                 <a class="list-group-item list-group-item-action">Advertisement</a>
-                <a class="list-group-item list-group-item-action">Drawings</a>
-                <a class="list-group-item list-group-item-action">3D Models</a>
-                <a class="list-group-item list-group-item-action">Posters</a>
+                <a class="list-group-item list-group-item-action">Digital Art</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section class="page-section" id="services">
+      <section class="page-section bg-white" id="services">
         <div class="container-lg px-3 px-lg-5">
             <!-- Button trigger modal -->
             <button type="button" class="d-block d-md-none btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Launch demo modal
             </button>
-            <h2 class="text-center mt-0">My work over the years</h2>
+            <h1 class="text-center">My work over the years</h1>
             <hr class="divider" />
-
-
-
-            <div class="navbar navbar-expand-md pb-0">
+            <div class="navbar navbar-expand-md pb-0 mx-auto col-xl-7">
               <div class="collapse navbar-collapse btn-group" role="group">
                 <a type="button" class="btn btn-primary">Logos</a>
                 <a type="button" class="btn btn-primary">Characters</a>
                 <a type="button" class="btn btn-primary">Photoshop</a>
                 <a type="button" class="btn btn-primary">Advertisement</a>
-                <a type="button" class="btn btn-primary">Drawings</a>
-                <a type="button" class="btn btn-primary">3D Models</a>
-                <a type="button" class="btn btn-primary">Posters</a>
+                <a type="button" class="btn btn-primary">Digital Art</a>
               </div>
             </div>
               <div class="">
@@ -399,7 +395,7 @@
                 </div>
                 </div>
                 <!-- Drawings -->
-                <div id="drawings">
+                <div id="digitalart">
                   <div class="py-1" id="portfolio">
                   <div class="container-fluid">
                       <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
@@ -430,61 +426,44 @@
                               </div>
                               </a>
                           </div>
-                      </div>
-                    </div>
-                </div>
-                </div>
-                <!-- 3D -->
-                <div id="3d">
-                  <div class="py-1" id="portfolio">
-                  <div class="container-fluid">
-                    <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                      <div class="col col-lg-2 d-flex justify-content-center">
-                        <a class="portfolio-box" href="img/3d/1.png" title="Project Name">
-                          <img class="img-fluid" src="img/thumbnail/3d/1.png" alt="..." />
-                          <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+                            <div class="col col-lg-2 d-flex justify-content-center">
+                              <a class="portfolio-box" href="img/3d/1.png" title="Project Name">
+                                <img class="img-fluid" src="img/thumbnail/3d/1.png" alt="..." />
+                                <div class="portfolio-box-caption">
+                                  <div class="project-category text-white-50">Category</div>
+                                  <div class="project-name">Project Name</div>
+                                </div>
+                              </a>
+                            </div>
+                          <div class="col col-lg-2 d-flex justify-content-center">
+                            <a class="portfolio-box" href="img/posters/1.png" title="Project Name">
+                              <img class="img-fluid" src="img/thumbnail/posters/1.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                              </div>
+                            </a>
                           </div>
-                        </a>
+                          <div class="col col-lg-2 d-flex justify-content-center">
+                            <a class="portfolio-box" href="img/posters/2.png" title="Project Name">
+                              <img class="img-fluid" src="img/thumbnail/posters/2.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                              </div>
+                            </a>
+                          </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                </div>
-                <!-- Posters -->
-                <div id="posters">
-                  <div class="py-1" id="portfolio">
-                  <div class="container-fluid">
-                    <div class="row row-cols-2 row-cols-md-5 col-lg-7 d-flex flex-lg-nowrap mx-auto justify-content-center">
-                        <div class="col col-lg-2 d-flex justify-content-center">
-                          <a class="portfolio-box" href="img/posters/1.png" title="Project Name">
-                            <img class="img-fluid" src="img/thumbnail/posters/1.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="project-category text-white-50">Category</div>
-                              <div class="project-name">Project Name</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col col-lg-2 d-flex justify-content-center">
-                          <a class="portfolio-box" href="img/posters/2.png" title="Project Name">
-                            <img class="img-fluid" src="img/thumbnail/posters/2.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                              <div class="project-category text-white-50">Category</div>
-                              <div class="project-name">Project Name</div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                  </div>
                 </div>
                 </div>
               </div>
-              <div class="col-lg-7 mx-auto">
+              <!-- <div class="col-lg-7 mx-auto">
                 <img class="img-fluid" src="img/7.png" alt="..." />
-              </div>
+              </div> -->
           </div>
       </section>
+
 
       <!-- Footer-->
       <footer class="bg-light py-5">

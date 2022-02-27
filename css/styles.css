@@ -64,15 +64,64 @@
   --bs-body-bg: #fff;
 }
 
+.page-section#about {
+  opacity: 0;
+}
+
+.mywork {
+  background-color: black;
+  background: url("../img/8.png");
+  height: 60vw;
+  background-size: 100%;
+  transition-property: background-size;
+  transition-duration: 10s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+
+}
+
+.mywork:hover {
+   background-size: 110%;
+}
+
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-right: 99vw solid #f4623a;
+	border-bottom: 10vw solid transparent;
+
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 10vw solid transparent;
+	border-left: 99vw solid #f4623a;
+	border-bottom: 0px solid transparent;
+}
+
+
 .masthead {
   position: fixed;
   z-index: -1;
 }
 
+.masthead .title, .masthead .name {
+  display: none;
+}
+
 .body {
   position: absolute;
   margin-top: 100vh;
-  background-color: white;
+  background-color: #f4623a;
+}
+
+@media (max-width: 820px) {
+
+  .body {
+margin-top: 50vh;
+  }
 }
 
 html {
@@ -11472,7 +11521,7 @@ hr.divider-light {
 
 header.masthead {
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/hero.png");
+  background: url("../img/8.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
