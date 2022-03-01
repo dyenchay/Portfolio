@@ -107,7 +107,7 @@
   z-index: -1;
 }
 
-.masthead .title, .masthead .name {
+.masthead .title, .masthead .name, .masthead hr {
   display: none;
 }
 

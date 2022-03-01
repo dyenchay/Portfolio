@@ -61,12 +61,15 @@
           }
         });
 
-        $(".masthead .title").animate({left: 'toggle', display: 'block'}, "slow");
+        $(".masthead hr").fadeIn();
 
-        $(".masthead .name").animate({
+        $(".masthead .name").delay(500).animate({
           height: 'toggle',
           display: 'block'
         });
+
+        $(".masthead .title").delay(850).fadeIn(1000);
+
       });
     </script>
   </head>
@@ -80,7 +83,7 @@
               <div class="col-lg-7 col-xl-6 px-md-5">
                 <h3 class="name">Destiney Yenchay</h3>
                 <h2 class="title text-white font-weight-bold">Front-End Web Developer</h2>
-                <hr class="divider mt-lg-5"/>
+                <hr class="divider mt-lg-5 position-static"/>
               </div>
               <!-- <div class="d-none d-lg-block side-cover bg-black bg-opacity-75 col-lg ms-auto h-100"></div> -->
             </div>
