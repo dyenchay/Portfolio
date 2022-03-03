@@ -55,20 +55,29 @@
           $("a").removeClass("active");
           $(event.currentTarget).addClass("active");
         });
-        $(window).scroll(function() {
-          if ($(document).scrollTop() > 50) {
-            $(".page-section#about").delay("fast").fadeTo(300, 1.0);
-          }
-        });
 
-        $(".masthead hr").fadeIn();
 
-        $(".masthead .name").delay(500).animate({
-          height: 'toggle',
-          display: 'block'
-        });
+        if ($(document).width() > 920) {
 
-        $(".masthead .title").delay(850).fadeIn(1000);
+          $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+              $(".page-section#about").delay("fast").fadeTo(300, 1.0);
+            }
+          });
+
+          $(".masthead hr").fadeIn();
+
+          $(".masthead .name").delay(500).animate({
+            height: 'toggle',
+            display: 'block'
+          });
+
+          $(".masthead .title").delay(850).fadeIn(1000);
+
+        }
+
+
+
 
       });
     </script>
@@ -76,16 +85,15 @@
   <body>
     <!-- Masthead-->
     <header class="masthead w-100">
-      <div class="vh-100 bg-black bg-opacity-75">
+      <div class="h-100 bg-black bg-opacity-75">
         <div class="triangle-right position-absolute top-0 end-0"></div>
-        <div class="container-lg h-100">
-          <div class="d-lg-flex gx-4 gx-lg-5 h-100 align-items-center">
+        <div class="container-md h-100">
+          <div class="d-flex gx-4 gx-lg-5 h-100 align-items-center">
               <div class="col-lg-7 col-xl-6 px-md-5">
                 <h3 class="name">Destiney Yenchay</h3>
                 <h2 class="title text-white font-weight-bold">Front-End Web Developer</h2>
-                <hr class="divider mt-lg-5 position-static"/>
+                <hr class="divider mt-md-5"/>
               </div>
-              <!-- <div class="d-none d-lg-block side-cover bg-black bg-opacity-75 col-lg ms-auto h-100"></div> -->
             </div>
         </div>
       </div>
@@ -99,7 +107,7 @@
       <!-- About-->
       <section class="page-section m-0" id="about">
         <div class="container-fluid px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 mx-auto col-8 justify-content-center">
+          <div class="row gx-4 gx-lg-5 mx-auto col-lg-8 justify-content-center">
             <div class="col-lg-5 align-self-center text-white">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
