@@ -21,6 +21,10 @@
     <script>
       $(document).ready(function(){
 
+        window.onbeforeunload = function () {
+            window.scrollTo(0,0);
+        };
+
         $("a:not('#Logos, .portfolio-box')").click(function(){
           $("#logos > #portfolio").hide();
         });
@@ -61,7 +65,11 @@
 
           $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
-              $(".page-section#about").delay("fast").fadeTo(300, 1.0);
+              $("header.masthead").fadeOut(1600);
+              $(".page-section#about").delay(500).fadeTo(300, 1.0);
+              $(".page-section#services").delay(550).fadeTo(300, 1.0);
+              $(".body").addClass("body-scroll");
+              $(".body").delay("fast").addClass("bg-opacity-75",1600);
             }
           });
 
@@ -74,6 +82,12 @@
 
           $(".masthead .title").delay(850).fadeIn(1000);
 
+
+
+        }
+
+        if ($(document).width() < 920) {
+          $("div").removeClass("box");
         }
 
 
@@ -102,49 +116,16 @@
 
 
 
-    <div class="body">
-<div class="triangle-left position-absolute bottom-100 start-0"></div>
+    <div class="body bg-black">
+      <div class="triangle-left position-absolute bottom-100 start-0"></div>
       <!-- About-->
       <section class="page-section m-0" id="about">
-        <div class="container-fluid px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 mx-auto col-lg-8 justify-content-center">
-            <div class="col-lg-5 align-self-center text-white">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div class="col-lg-7">
-              <img class="img-fluid" src="img/browser.png" alt="..." />
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="list-group" aria-labelledby="dropdownMenuButton1">
-                <a class="list-group-item list-group-item-action">Logos</a>
-                <a class="list-group-item list-group-item-action">Characters</a>
-                <a class="list-group-item list-group-item-action">Photoshop</a>
-                <a class="list-group-item list-group-item-action">Advertisement</a>
-                <a class="list-group-item list-group-item-action">Digital Art</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="page-section bg-white" id="services">
         <div class="container-lg px-3 px-lg-5">
             <!-- Button trigger modal -->
             <button type="button" class="d-block d-md-none btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Launch demo modal
             </button>
-            <h1 class="text-center">My work over the years</h1>
+            <h1 class="text-center text-white">My Digital Artwork</h1>
             <hr class="divider" />
             <div class="navbar navbar-expand-md pb-0 mx-auto col-xl-7">
               <div class="collapse navbar-collapse btn-group" role="group">
@@ -476,6 +457,68 @@
                 <img class="img-fluid" src="img/7.png" alt="..." />
               </div> -->
           </div>
+
+
+      </section>
+
+
+      <!-- Modal -->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="list-group" aria-labelledby="dropdownMenuButton1">
+                <a class="list-group-item list-group-item-action">Logos</a>
+                <a class="list-group-item list-group-item-action">Characters</a>
+                <a class="list-group-item list-group-item-action">Photoshop</a>
+                <a class="list-group-item list-group-item-action">Advertisement</a>
+                <a class="list-group-item list-group-item-action">Digital Art</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="page-section" id="services">
+        <h1 class="text-center text-white">My work over the years</h1>
+        <hr class="divider mx-5" />
+        <div class="container-fluid px-4 px-lg-5">
+          <div class="p-0 row gx-4 gx-lg-5 mx-auto justify-content-center">
+            <div class="card col-lg p-0">
+              <img src="img/projects/Project_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Centralsense</h4>
+              </div>
+            </div>
+            <div class="card col-lg p-0 mx-3">
+              <img src="img/projects/Project_2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Centralsense</h4>
+              </div>
+            </div>
+            <div class="card col-lg p-0">
+              <img src="img/projects/Project_3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Centralsense</h4>
+              </div>
+            </div>
+            <div class="card col-lg p-0 mx-3">
+              <img src="img/projects/Project_4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Centralsense</h4>
+              </div>
+            </div>
+            <div class="card col-lg p-0">
+              <img src="img/projects/Project_5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Centralsense</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
 
