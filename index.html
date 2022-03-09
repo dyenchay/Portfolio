@@ -65,33 +65,19 @@
 
           $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
-              $("header.masthead").fadeOut(1600);
-              $(".page-section#about").delay(500).fadeTo(300, 1.0);
-              $(".page-section#services").delay(550).fadeTo(300, 1.0);
+              $("header.masthead").fadeOut(800);
+              $(".page-section#about").delay(200).fadeTo(300, 1.0);
+              $(".page-section#services").delay(250).fadeTo(300, 1.0);
               $(".body").addClass("body-scroll");
-              $(".body").delay("fast").addClass("bg-opacity-75",1600);
+              $(".body").delay("fast").addClass("bg-opacity-75",700);
             }
           });
-
-          $(".masthead hr").fadeIn();
-
-          $(".masthead .name").delay(500).animate({
-            height: 'toggle',
-            display: 'block'
-          });
-
-          $(".masthead .title").delay(850).fadeIn(1000);
-
-
 
         }
 
         if ($(document).width() < 920) {
           $("div").removeClass("box");
         }
-
-
-
 
       });
     </script>
@@ -100,15 +86,20 @@
     <!-- Masthead-->
     <header class="masthead w-100">
       <div class="h-100 bg-black bg-opacity-75">
-        <div class="triangle-right position-absolute top-0 end-0"></div>
-        <div class="container-md h-100">
-          <div class="d-flex gx-4 gx-lg-5 h-100 align-items-center">
-              <div class="col-lg-7 col-xl-6 px-md-5">
+        <!-- <div class="triangle-right position-absolute top-0 end-0"></div> -->
+        <div class="container-md h-100 p-0">
+          <div class="d-flex gx-4 gx-lg-5 h-100 align-items-center justify-content-center">
+            <div class="moo align-items-center justify-content-center">
+              <!-- <div class="col-lg-7 col-xl-5">
                 <h3 class="name">Destiney Yenchay</h3>
-                <h2 class="title text-white font-weight-bold">Front-End Web Developer</h2>
-                <hr class="divider mt-md-5"/>
+                <h2 class="title text-white font-weight-bold">Front-End <br/>Web Designer<br/>Web Developer<br/>Graphic Designer</h2>
+              </div> -->
+              <div class="text-white border-start border-white border-5">
+                <h3 class="ms-lg-5 mt-0 name">Hello, my name is Destiney Yenchay and I am a Web Designer/Developer based in California.</h3>
+                <h2 class="ms-lg-5 mb-0 mt-1 title">I started out as an intern back in college and from there it evolved to a career. Web responsive websites are my specialty, but I also boast a plethora of other skills and can design & create content for the website as well.</h2>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </header>
@@ -116,14 +107,15 @@
 
 
 
-    <div class="body bg-black">
-      <div class="triangle-left position-absolute bottom-100 start-0"></div>
+    <div class="body bg-black bg-opacity-50">
+      <!-- <div class="triangle-left position-absolute bottom-100 start-0"></div> -->
       <!-- About-->
+
       <section class="page-section m-0" id="about">
         <div class="container-lg px-3 px-lg-5">
             <!-- Button trigger modal -->
-            <button type="button" class="d-block d-md-none btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
+            <button type="button" class="d-block d-md-none btn btn-primary mx-auto w-75 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Click Me
             </button>
             <h1 class="text-center text-white">My Digital Artwork</h1>
             <hr class="divider" />
@@ -483,38 +475,38 @@
         </div>
       </div>
       <section class="page-section" id="services">
-        <h1 class="text-center text-white">My work over the years</h1>
+        <h1 class="text-center text-white">Website Mockups</h1>
         <hr class="divider mx-5" />
         <div class="container-fluid px-4 px-lg-5">
-          <div class="p-0 row gx-4 gx-lg-5 mx-auto justify-content-center">
-            <div class="card col-lg p-0">
+          <div class="p-0 row row-cols-2 row-cols-md-5 d-flex flex-lg-nowrap mx-auto justify-content-center">
+            <div class="card col p-0">
               <img src="img/projects/Project_1.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Centralsense</h4>
+                <h4 class="card-title text-center">ModernPO</h4>
               </div>
             </div>
-            <div class="card col-lg p-0 mx-3">
+            <div class="card col p-0 mx-lg-3">
               <img src="img/projects/Project_2.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Centralsense</h4>
+                <h4 class="card-title text-center">Demo</h4>
               </div>
             </div>
-            <div class="card col-lg p-0">
+            <div class="card col p-0">
               <img src="img/projects/Project_3.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Centralsense</h4>
+                <h4 class="card-title text-center">Decurate</h4>
               </div>
             </div>
-            <div class="card col-lg p-0 mx-3">
+            <div class="card col p-0 mx-lg-3">
               <img src="img/projects/Project_4.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">Centralsense</h4>
               </div>
             </div>
-            <div class="card col-lg p-0">
+            <div class="card col p-0">
               <img src="img/projects/Project_5.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Centralsense</h4>
+                <h4 class="card-title text-center">ModernPO v2</h4>
               </div>
             </div>
           </div>
@@ -523,9 +515,9 @@
 
 
       <!-- Footer-->
-      <footer class="bg-light py-5">
+      <!-- <footer class="bg-light py-5">
           <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
-      </footer>
+      </footer> -->
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- SimpleLightbox plugin JS-->

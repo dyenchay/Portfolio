@@ -64,6 +64,27 @@
   --bs-body-bg: #fff;
 }
 
+.moo {
+  background-color: #f4623ad1;
+  display: flex;
+  padding: 10rem;
+  width: 50vw;
+  height: 50vh;
+}
+
+@media (max-width: 920px) {
+  .moo {
+    display: block;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    background-color: var(--bs-primary);
+  }
+  .page-section#services {
+    background-color: var(--bs-primary);
+  }
+}
+
 div.box {
   --s:calc(60vw - 30vw);  /*Size of the circle */
   --p:30px;   /* padding */
@@ -142,9 +163,6 @@ div.box {
   position: fixed;
 }
 @media (min-width: 920px) {
-  .masthead .title, .masthead .name, .masthead hr {
-    display: none;
-  }
 
   .page-section#about, .page-section#services {
     opacity: 0;
@@ -164,8 +182,8 @@ div.box {
 .body-scroll {
   margin-top: 0;
   transition-property: margin-top;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  transition-duration: 0.05s;
+  transition-timing-function: ease-in;
 }
 
 @media (max-width: 920px) {
@@ -190,15 +208,16 @@ html {
 }
 
 .name {
-  font-size: calc(2rem + 0.3vw);
+  font-size: calc(1.2rem + 1vw);
   color: white;
-  opacity: 0.25;
+  opacity: 0.9;
+  text-align: left;
 }
 
 .title {
-  font-size: calc(2rem + 0.9vw);
-  margin-top: -0.6rem;
-  position: absolute;
+  font-size: calc(1rem + 0.6vw);
+  text-align: left;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -11571,8 +11590,8 @@ hr.divider-light {
 }
 
 header.masthead {
-  height: 50vh;
-  background: url("../img/8.png");
+  height: auto;
+  background: url("../img/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11589,6 +11608,7 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
+    opacity: 0.8;
     font-size: 1.15rem;
   }
   header.masthead h1, header.masthead .h1 {
