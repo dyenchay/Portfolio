@@ -1,0 +1,30 @@
+.container {
+  max-width: 2240px;
+}
+
+.card {
+  border: none;
+  border-radius: 0px;
+}
+
+ul {
+  list-style-type:none;
+}
+
+p {
+  font-family: montserrat;
+  font-size: 140%
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+a {
+  font-family: montserrat;
+}
+
+.light-grey {
+  background-color: #dedede;
+}
