@@ -1,0 +1,153 @@
+body {
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.shape:not([class*=shape-blur]) {
+  overflow: visible;
+}
+
+@media (min-width: 1600px)
+{
+
+  .title span {
+    font-size: 3vw;
+  }
+
+  .title h1 {
+    font-size: 4vw;
+    letter-spacing: 3px !important;
+  }
+
+}
+
+@media (min-width: 2000px)
+{
+
+  .title span {
+    font-size: 1.5vw;
+  }
+
+  .title h1 {
+    font-size: 3vw;
+    letter-spacing: 3px !important;
+  }
+
+}
+
+@media (max-width: 900px)
+{
+
+  body {
+    font-size: 80% !important;
+  }
+
+  .title span {
+    font-size: 7vw;
+  }
+
+  .title h1 {
+    font-size: 11vw;
+    letter-spacing: 3px !important;
+  }
+
+}
+
+@media (max-width: 1200px)
+{
+
+  .bg-mobile div:not(.bg-cover) {
+    background-color:#e0dbcf !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title span {
+    font-size: 5vw;
+  }
+
+  .title h1 {
+    font-size: 7vw;
+    letter-spacing: 2px !important;
+  }
+
+}
+
+.overlay-black::before {
+    background-color: #594d43;
+  }
+
+  body {
+    background-color:#efece8;
+  }
+
+  .bg-light {
+    background-color:#ece9e1;
+  }
+
+  /* h1:not(.text-center), h2:not(.text-center), h3:not(.text-center), .list-group-item {
+    color:#6d5c4e;
+  } */
+
+  p:not(.text-center) {
+    /* color:#9e8b7c !important; */
+    font-size: 135%;
+  }
+
+  p.text-center {
+    color:#b7b3ad !important;
+  }
+
+  .text-white {
+    color:#ece9e1 !important;
+  }
+
+  .text-muted {
+    /* color:#9e8b7c !important; */
+    color:black !important;
+  }
+
+  a {
+    /* color:#6d5c4e; */
+    font-size: 130%;
+    text-decoration: underline;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    /* color:#6d5c4e; */
+    opacity: 0.5;
+  }
+
+  .font-size-lg {
+    font-size: 130% !important;
+  }
+
+
+  #navbar {
+    overflow: hidden;
+    transition: 0.8s;
+    z-index: 99;
+    height: 70vh;
+  }
+
+  .price {
+    font-size:60%;
+    /* color:#6d5c4e; */
+  }
+
+  .card, .list-group-item {
+    border-color: #9e8b7c !important;
+  }
+
+  .card-border {
+    border-top: #6d5c4e !important;
+  }
+
+  .bg h2 {
+    color:#ece9e1;
+  }
+
+  .bg p {
+    color:#b7b3ad !important;
+  }
